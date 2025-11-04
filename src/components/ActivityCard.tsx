@@ -25,7 +25,7 @@ export default function ActivityCard({ activity, isActive = false, onClick }: Ac
     >
       {/* Icon Container */}
       <div className="w-[94.6px] h-[94.6px] mb-[27.6px] flex items-center justify-center overflow-hidden">
-        <img src={activity.icon} alt={activity.title} className="w-full h-full object-contain" />
+        <Image src={activity.icon} alt={activity.title} className="w-full h-full object-contain" />
       </div>
 
       {/* Content */}

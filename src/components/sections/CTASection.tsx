@@ -5,25 +5,25 @@ import { DESIGN_TOKENS } from '@/constants/design'
 
 const stats = [
   {
-    number: "500+",
-    label: "Peserta Terdaftar",
-    description: "Dari berbagai universitas dan perusahaan"
+    number: '500+',
+    label: 'Peserta Terdaftar',
+    description: 'Dari berbagai universitas dan perusahaan',
   },
   {
-    number: "50+",
-    label: "Expert Mentor",
-    description: "Profesional dari industri cybersecurity"
+    number: '50+',
+    label: 'Expert Mentor',
+    description: 'Profesional dari industri cybersecurity',
   },
   {
-    number: "95%",
-    label: "Tingkat Kepuasan",
-    description: "Peserta merasa puas dengan program"
+    number: '95%',
+    label: 'Tingkat Kepuasan',
+    description: 'Peserta merasa puas dengan program',
   },
   {
-    number: "80%",
-    label: "Karir Berhasil",
-    description: "Alumni mendapat pekerjaan di bidang cybersecurity"
-  }
+    number: '80%',
+    label: 'Karir Berhasil',
+    description: 'Alumni mendapat pekerjaan di bidang cybersecurity',
+  },
 ]
 
 export default function CTASection() {
@@ -55,7 +55,7 @@ export default function CTASection() {
                   fontFamily: 'SF Pro, sans-serif',
                   fontVariationSettings: '"wdth" 100',
                   fontWeight: 'bold',
-                  textShadow: '0 0 30px rgba(255,255,255,0.3)'
+                  textShadow: '0 0 30px rgba(255,255,255,0.3)',
                 }}
               >
                 {stat.number}
@@ -65,7 +65,7 @@ export default function CTASection() {
                 style={{
                   fontSize: '18px',
                   fontFamily: 'SF Pro, sans-serif',
-                  fontWeight: 'semibold'
+                  fontWeight: 'semibold',
                 }}
               >
                 {stat.label}
@@ -74,7 +74,7 @@ export default function CTASection() {
                 className="text-white/60 text-sm"
                 style={{
                   fontFamily: 'SF Pro, sans-serif',
-                  fontWeight: 'medium'
+                  fontWeight: 'medium',
                 }}
               >
                 {stat.description}
@@ -105,7 +105,7 @@ export default function CTASection() {
                   fontFamily: 'SF Pro, sans-serif',
                   fontVariationSettings: '"wdth" 100',
                   fontWeight: 'bold',
-                  textShadow: '0 0 50px rgba(255,255,255,0.5)'
+                  textShadow: '0 0 50px rgba(255,255,255,0.5)',
                 }}
               >
                 Siap Memulai Karir
@@ -124,10 +124,12 @@ export default function CTASection() {
                   fontFamily: 'SF Pro, sans-serif',
                   fontVariationSettings: '"wdth" 100',
                   fontWeight: 'medium',
-                  lineHeight: '1.6'
+                  lineHeight: '1.6',
                 }}
               >
-                Bergabunglah dengan ratusan peserta lainnya dan dapatkan akses ke materi pembelajaran terbaik, mentorship dari para ahli, dan komunitas cybersecurity yang supportif.
+                Bergabunglah dengan ratusan peserta lainnya dan dapatkan akses ke materi
+                pembelajaran terbaik, mentorship dari para ahli, dan komunitas cybersecurity yang
+                supportif.
               </motion.p>
 
               <motion.div
@@ -137,12 +139,12 @@ export default function CTASection() {
                 className="flex flex-col sm:flex-row gap-6 justify-center items-center"
               >
                 <motion.button
-                  whileHover={{ scale: 1.05, boxShadow: "0 10px 40px rgba(59, 130, 246, 0.5)" }}
+                  whileHover={{ scale: 1.05, boxShadow: '0 10px 40px rgba(59, 130, 246, 0.5)' }}
                   whileTap={{ scale: 0.95 }}
                   className="px-12 py-5 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-xl text-lg"
                   style={{
                     fontFamily: 'SF Pro, sans-serif',
-                    fontWeight: 'bold'
+                    fontWeight: 'bold',
                   }}
                 >
                   Daftar Sekarang
@@ -154,7 +156,7 @@ export default function CTASection() {
                   className="px-12 py-5 bg-white/10 backdrop-blur-md text-white font-bold rounded-full hover:bg-white/20 transition-all duration-300 border border-white/20 text-lg"
                   style={{
                     fontFamily: 'SF Pro, sans-serif',
-                    fontWeight: 'bold'
+                    fontWeight: 'bold',
                   }}
                 >
                   Download Kurikulum
@@ -169,7 +171,7 @@ export default function CTASection() {
                 style={{
                   fontFamily: 'SF Pro, sans-serif',
                   fontSize: '14px',
-                  fontWeight: 'medium'
+                  fontWeight: 'medium',
                 }}
               >
                 No credit card required • Free consultation available
@@ -188,8 +190,18 @@ export default function CTASection() {
           <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                <svg
+                  className="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
                 </svg>
               </div>
               <span className="text-white font-medium">info@hackpoint.id</span>
@@ -197,8 +209,18 @@ export default function CTASection() {
 
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                <svg
+                  className="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
                 </svg>
               </div>
               <span className="text-white font-medium">+62 812-3456-7890</span>

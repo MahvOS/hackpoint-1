@@ -16,7 +16,7 @@ function CountdownDigit({ value }: { value: string }) {
         style={{
           fontFamily: 'SF Pro, sans-serif',
           fontVariationSettings: '"wdth" 100',
-          fontWeight: 510
+          fontWeight: 510,
         }}
       >
         {value}
@@ -84,7 +84,8 @@ export default function CyberFestHeroSection() {
   return (
     <section
       id="cyberfest"
-      className="relative min-h-screen md:h-[1000px] flex items-center justify-center overflow-hidden pt-[150px] md:pt-[110px]" style={{ backgroundColor: '#1A1A1A' }}
+      className="relative min-h-screen md:h-[1000px] flex items-center justify-center overflow-hidden pt-[150px] md:pt-[110px]"
+      style={{ backgroundColor: '#1A1A1A' }}
     >
       {/* Background Image with Blur */}
       <div className="absolute inset-0 z-0">
@@ -115,7 +116,7 @@ export default function CyberFestHeroSection() {
             <span className="font-bold text-[32px] sm:text-[22px] text-white/30 block font-sf leading-tight leading-7">
               Indonesia's Biggest Cybersecurity
               <br className="hidden sm:block" />
-               Youth & Tech Movement
+              Youth & Tech Movement
             </span>
           </motion.h1>
 
@@ -128,7 +129,7 @@ export default function CyberFestHeroSection() {
             style={{
               fontFamily: 'DM Sans, sans-serif',
               fontVariationSettings: '"opsz" 14',
-              fontWeight: 'bold'
+              fontWeight: 'bold',
             }}
           >
             <span className="font-bold leading-none">
@@ -137,7 +138,7 @@ export default function CyberFestHeroSection() {
                 style={{
                   fontFamily: 'SF Pro, sans-serif',
                   fontVariationSettings: '"YAXS" 430',
-                  fontSize: '54px'
+                  fontSize: '54px',
                 }}
               >
                 CyberFest 2025
@@ -147,7 +148,7 @@ export default function CyberFestHeroSection() {
                 style={{
                   fontFamily: 'SF Pro, sans-serif',
                   fontVariationSettings: '"wdth" 100',
-                  fontSize: '54px'
+                  fontSize: '54px',
                 }}
               >
                 -
@@ -157,7 +158,7 @@ export default function CyberFestHeroSection() {
                 style={{
                   fontFamily: 'SF Pro, sans-serif',
                   fontVariationSettings: '"wdth" 100',
-                  fontSize: '50px'
+                  fontSize: '50px',
                 }}
               >
                 Indonesia's Biggest Cybersecurity Youth & Tech Movement
@@ -271,7 +272,7 @@ export default function CyberFestHeroSection() {
               style={{
                 fontFamily: 'DM Sans, sans-serif',
                 fontVariationSettings: '"opsz" 14',
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
             >
               Daftar Sekarang

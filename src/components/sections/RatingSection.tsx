@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { DESIGN_TOKENS } from '@/constants/design'
+
 
 export default function RatingSection() {
   return (
@@ -14,7 +14,7 @@ export default function RatingSection() {
       >
         <div className="flex items-center gap-6">
           <div className="flex gap-2">
-            {[1, 2, 3, 4, 5].map((star) => (
+            {[1, 2, 3, 4, 5].map(star => (
               <div key={star} className="relative w-8 h-8">
                 <svg
                   width="32"

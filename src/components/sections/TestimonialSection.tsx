@@ -82,7 +82,11 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
             // Special handling for Rizqi's multi-line name
             <div
               className="font-bold h-[28px] w-[180px]"
-              style={{ fontFamily: 'DM Sans, sans-serif', fontVariationSettings: "'opsz' 14", fontSize: '20px' }}
+              style={{
+                fontFamily: 'DM Sans, sans-serif',
+                fontVariationSettings: "'opsz' 14",
+                fontSize: '20px',
+              }}
             >
               <p className="mb-0">{testimonial.name}</p>
               <p>&nbsp;</p>
@@ -128,10 +132,14 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
 
 export default function TestimonialSection() {
   // Convert testimonials to slider items - memoized for performance
-  const sliderItems = useMemo(() => TESTIMONIALS.map(testimonial => ({
-    id: testimonial.id,
-    content: <TestimonialCard testimonial={testimonial} />,
-  })), [])
+  const sliderItems = useMemo(
+    () =>
+      TESTIMONIALS.map(testimonial => ({
+        id: testimonial.id,
+        content: <TestimonialCard testimonial={testimonial} />,
+      })),
+    []
+  )
 
   const handleItemClick = () => {
     // Handle testimonial click - could expand, show more details, etc.
@@ -272,7 +280,7 @@ export default function TestimonialSection() {
           whileInView={{ opacity: 0.6, x: 0, rotate: -15 }}
           transition={{
             duration: DESIGN_TOKENS.animation.duration.slow,
-            delay: 0.3
+            delay: 0.3,
           }}
         />
       </div>

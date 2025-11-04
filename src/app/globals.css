@@ -116,7 +116,9 @@
 
 /* Font Classes - Using Next.js Font Variables */
 .font-sf {
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica,
+    Arial, sans-serif;
 }
 
 .font-bebas {
@@ -124,11 +126,15 @@
 }
 
 .font-poppins {
-  font-family: var(--font-poppins), -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family:
+    var(--font-poppins),
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
 }
 
 .font-anton {
-  font-family: var(--font-anton), "Arial Black", sans-serif;
+  font-family: var(--font-anton), 'Arial Black', sans-serif;
 }
 
 .font-oswald {

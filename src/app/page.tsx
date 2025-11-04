@@ -37,7 +37,6 @@ export default function Page() {
             <SponsorshipSection />
           </div>
 
-
           <FooterSection />
         </main>
       </div>

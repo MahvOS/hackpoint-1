@@ -15,8 +15,8 @@ export default function CyberFestAboutSection() {
             className="absolute left-4 md:left-[135px] top-8 md:top-[138px] w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[661.815px] md:h-[627.615px] opacity-20"
             initial={{ opacity: 0, rotate: -10 }}
             whileInView={{ opacity: 0.2, rotate: 0 }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-            style={{ transform: "rotate(350.708deg)" }}
+            transition={{ duration: 1.2, ease: 'easeOut' }}
+            style={{ transform: 'rotate(350.708deg)' }}
           >
             <div
               className="w-full h-full"
@@ -29,15 +29,13 @@ export default function CyberFestAboutSection() {
                 WebkitMaskSize: 'contain',
                 WebkitMaskRepeat: 'no-repeat',
                 WebkitMaskPosition: 'center',
-                background: 'linear-gradient(135deg, #d33533 0%, #770201 100%)'
+                background: 'linear-gradient(135deg, #d33533 0%, #770201 100%)',
               }}
             />
           </motion.div>
 
           {/* CyberFest Page Element - Behind Description */}
-          <div
-            className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-5"
-          >
+          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-5">
             <img
               src="/assets/hackpoint/cyberfest_page_element.png"
               alt="CyberFest Page Element"
@@ -46,9 +44,7 @@ export default function CyberFestAboutSection() {
           </div>
 
           {/* New Decorative Badge from Figma */}
-          <div
-            className="absolute right-16 md:right-[120px] -bottom-3 md:bottom-[100px] scale-70 md:scale-100"
-          >
+          <div className="absolute right-16 md:right-[120px] -bottom-3 md:bottom-[100px] scale-70 md:scale-100">
             <DecorativeBadge size="md" />
           </div>
         </div>
@@ -69,14 +65,14 @@ export default function CyberFestAboutSection() {
             style={{
               fontFamily: 'SF Pro, sans-serif',
               fontVariationSettings: '"wdth" 100',
-              fontWeight: 700
+              fontWeight: 700,
             }}
           >
             <span
               className="text-[43px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[85.658px] text-[#D33533] md:text-white/30"
               style={{
                 fontVariationSettings: '"wdth" 100',
-                display: 'inline-block'
+                display: 'inline-block',
               }}
             >
               About
@@ -85,15 +81,14 @@ export default function CyberFestAboutSection() {
               className="text-[28px] sm:text-[36px] md:text-[46px] lg:text-[58px] xl:text-[78.683px] text-white mx-1 sm:mx-2"
               style={{
                 fontVariationSettings: '"wdth" 100',
-                display: 'inline-block'
+                display: 'inline-block',
               }}
-            >
-            </span>
+            ></span>
             <span
               className="text-[42px] sm:text-[36px] md:text-[46px] lg:text-[58px] xl:text-[78.683px] text-white"
               style={{
                 fontVariationSettings: '"wdth" 100',
-                display: 'inline-block'
+                display: 'inline-block',
               }}
             >
               CyberFest?
@@ -112,17 +107,15 @@ export default function CyberFestAboutSection() {
               style={{
                 fontFamily: 'SF Pro, sans-serif',
                 fontVariationSettings: '"opsz" 14, "YAXS" 419.2',
-                fontWeight: 550.8
+                fontWeight: 550.8,
               }}
             >
               <span style={{ fontVariationSettings: '"YAXS" 419.2' }}>
                 Cyber Fest 2025 adalah event cybersecurity nasional yang diinisiasi HackPoint.
               </span>
-              <span
-                className="text-white/30"
-                style={{ fontVariationSettings: '"YAXS" 419.2' }}
-              >
-                 Event ini menggabungkan kompetisi CTF, seminar, workshop, dan networking dalam satu panggung besar.
+              <span className="text-white/30" style={{ fontVariationSettings: '"YAXS" 419.2' }}>
+                Event ini menggabungkan kompetisi CTF, seminar, workshop, dan networking dalam satu
+                panggung besar.
               </span>
             </p>
             <p
@@ -130,10 +123,11 @@ export default function CyberFestAboutSection() {
               style={{
                 fontFamily: 'SF Pro, sans-serif',
                 fontVariationSettings: '"opsz" 14, "YAXS" 419.2',
-                fontWeight: 550.8
+                fontWeight: 550.8,
               }}
             >
-              Tujuannya sederhana: membangun generasi baru talenta digital Indonesia yang siap menghadapi tantangan keamanan cyber global.
+              Tujuannya sederhana: membangun generasi baru talenta digital Indonesia yang siap
+              menghadapi tantangan keamanan cyber global.
             </p>
           </motion.div>
         </motion.div>

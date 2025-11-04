@@ -10,7 +10,7 @@ export default function VisionMissionSection() {
       <div
         className="absolute top-1/2 -translate-x-1/2 transform -translate-y-1/2 w-[800px] h-[800px] rounded-full opacity-30 z-0"
         style={{
-          background: 'radial-gradient(circle, #D33533 0%, transparent 70%)'
+          background: 'radial-gradient(circle, #D33533 0%, transparent 70%)',
         }}
       ></div>
 
@@ -41,8 +41,13 @@ export default function VisionMissionSection() {
                   Visi Kami
                 </h2>
               </div>
-              <p className="font-medium leading-[normal] text-[16px] md:text-[21px] text-white w-full" style={{ fontVariationSettings: "'wdth' 100", fontWeight: 510 }}>
-                Menjadi jembatan bagi generasi muda untuk menguasai keterampilan cybersecurity, membangun karier global, dan berkontribusi pada ekosistem keamanan digital Indonesia maupun internasional.
+              <p
+                className="font-medium leading-[normal] text-[16px] md:text-[21px] text-white w-full"
+                style={{ fontVariationSettings: "'wdth' 100", fontWeight: 510 }}
+              >
+                Menjadi jembatan bagi generasi muda untuk menguasai keterampilan cybersecurity,
+                membangun karier global, dan berkontribusi pada ekosistem keamanan digital Indonesia
+                maupun internasional.
               </p>
             </div>
 
@@ -53,12 +58,19 @@ export default function VisionMissionSection() {
                   Misi Kami
                 </h2>
               </div>
-              <div className="font-medium leading-[normal] text-[16px] md:text-[21px] text-white w-full" style={{ fontVariationSettings: "'wdth' 100", fontWeight: 510 }}>
+              <div
+                className="font-medium leading-[normal] text-[16px] md:text-[21px] text-white w-full"
+                style={{ fontVariationSettings: "'wdth' 100", fontWeight: 510 }}
+              >
                 <p className="mb-3">
-                  Menyediakan Akses Pembelajaran Melalui bootcamp, course, dan webinar yang dirancang dari fundamental sampai level advance. Membangun Ekosistem Komunitas Menghubungkan mahasiswa, Profesional, dan perusahaan agar saling bertukar ilmu dan peluang.
+                  Menyediakan Akses Pembelajaran Melalui bootcamp, course, dan webinar yang
+                  dirancang dari fundamental sampai level advance. Membangun Ekosistem Komunitas
+                  Menghubungkan mahasiswa, Profesional, dan perusahaan agar saling bertukar ilmu dan
+                  peluang.
                 </p>
                 <p className="font-semibold" style={{ fontWeight: 590 }}>
-                  Mendorong Kompetisi & Event<br/>
+                  Mendorong Kompetisi & Event
+                  <br />
                   Seperti Cyber Fest 2025,
                 </p>
               </div>

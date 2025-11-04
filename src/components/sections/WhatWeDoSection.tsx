@@ -58,10 +58,14 @@ const ActivityCard = ({ activity }: { activity: Activity }) => (
 
 export default function WhatWeDoSection() {
   // Convert activities to slider items for infinite slider - memoized for performance
-  const sliderItems = useMemo(() => ACTIVITIES.map(activity => ({
-    id: activity.title.toLowerCase().replace(/\s+/g, '-'),
-    content: <ActivityCard activity={activity} />,
-  })), [])
+  const sliderItems = useMemo(
+    () =>
+      ACTIVITIES.map(activity => ({
+        id: activity.title.toLowerCase().replace(/\s+/g, '-'),
+        content: <ActivityCard activity={activity} />,
+      })),
+    []
+  )
 
   const handleItemClick = () => {
     // Handle activity click - could open modal, navigate, etc.
@@ -119,7 +123,11 @@ export default function WhatWeDoSection() {
                 <div className="flex flex-col items-center justify-center text-center">
                   {/* Icon Container */}
                   <div className="w-16 h-16 mb-4 flex items-center justify-center overflow-hidden">
-                    <img src={activity.icon} alt={activity.title} className="w-full h-full object-contain" />
+                    <img
+                      src={activity.icon}
+                      alt={activity.title}
+                      className="w-full h-full object-contain"
+                    />
                   </div>
 
                   {/* Content */}

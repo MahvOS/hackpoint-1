@@ -1,34 +1,37 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image';
 import FeatureCard from '@/components/shared/FeatureCard'
 import DecorativeArrows from '@/components/shared/DecorativeArrows'
 
 const features = [
   {
-    title: "Pembelajaran Interaktif",
-    description: "Semua materi difokuskan pada praktik nyata, bukan sekadar teori.",
-    backgroundImage: "/assets/hackpoint/about_page_pembelajaran_interaktif.png",
-    logoImage: "/assets/hackpoint/about_page_cardlogo.png"
+    title: 'Pembelajaran Interaktif',
+    description: 'Semua materi difokuskan pada praktik nyata, bukan sekadar teori.',
+    backgroundImage: '/assets/hackpoint/about_page_pembelajaran_interaktif.png',
+    logoImage: '/assets/hackpoint/about_page_cardlogo.png',
   },
   {
-    title: "Mentorship dari Praktisi",
-    description: "Dibimbing oleh orang-orang yang memang bekerja di bidang cybersecurity.",
-    backgroundImage: "/assets/hackpoint/about_page_mentorship.png",
-    logoImage: "/assets/hackpoint/about_page_cardlogo.png"
+    title: 'Mentorship dari Praktisi',
+    description: 'Dibimbing oleh orang-orang yang memang bekerja di bidang cybersecurity.',
+    backgroundImage: '/assets/hackpoint/about_page_mentorship.png',
+    logoImage: '/assets/hackpoint/about_page_cardlogo.png',
   },
   {
-    title: "Community-Driven",
-    description: "HackPoint bukan sekadar lembaga training, tapi komunitas aktif yang tumbuh bersama.",
-    backgroundImage: "/assets/hackpoint/about_page_community.png",
-    logoImage: "/assets/hackpoint/about_page_cardlogo.png"
+    title: 'Community-Driven',
+    description:
+      'HackPoint bukan sekadar lembaga training, tapi komunitas aktif yang tumbuh bersama.',
+    backgroundImage: '/assets/hackpoint/about_page_community.png',
+    logoImage: '/assets/hackpoint/about_page_cardlogo.png',
   },
   {
-    title: "Event & Networking",
-    description: "Kesempatan untuk bertemu dengan perusahaan, mentor, dan sesama peserta dari berbagai kampus dan industri.",
-    backgroundImage: "/assets/hackpoint/about_page_event_networking.png",
-    logoImage: "/assets/hackpoint/about_page_cardlogo.png"
-  }
+    title: 'Event & Networking',
+    description:
+      'Kesempatan untuk bertemu dengan perusahaan, mentor, dan sesama peserta dari berbagai kampus dan industri.',
+    backgroundImage: '/assets/hackpoint/about_page_event_networking.png',
+    logoImage: '/assets/hackpoint/about_page_cardlogo.png',
+  },
 ]
 
 export default function WhatMakesUsDifferentSection() {
@@ -43,17 +46,13 @@ export default function WhatMakesUsDifferentSection() {
         >
           {/* Mini Icon and Text - MOBILE ONLY */}
           <div className="flex items-center gap-2 mb-4 md:hidden">
-            <img
-              src="/assets/hackpoint/mobile_icon_mini.png"
-              alt="Mini icon"
-              className="w-6 h-6"
-            />
+            <Image src="/assets/hackpoint/mobile_icon_mini.png" alt="Mini icon" className="w-6 h-6" />
             <span
               className="text-white font-semibold uppercase tracking-wider text-xs"
               style={{
                 fontFamily: 'SF Pro, sans-serif',
                 fontVariationSettings: '"wdth" 100',
-                fontWeight: '600'
+                fontWeight: '600',
               }}
             >
               Why Hackpoint Is Different
@@ -65,7 +64,7 @@ export default function WhatMakesUsDifferentSection() {
             style={{
               fontFamily: 'SF Pro, sans-serif',
               fontVariationSettings: '"wdth" 100',
-              fontWeight: 'bold'
+              fontWeight: 'bold',
             }}
           >
             Apa yang Membuat <br /> HackPoint Berbeda?

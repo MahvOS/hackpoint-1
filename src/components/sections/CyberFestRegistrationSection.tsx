@@ -5,7 +5,10 @@ import Image from 'next/image'
 
 export default function CyberFestRegistrationSection() {
   return (
-    <section className="relative py-8 md:py-20 px-4 sm:px-6 md:px-[70px] overflow-hidden min-h-[700px] md:min-h-[500px]" style={{ backgroundColor: '#1A1A1A' }}>
+    <section
+      className="relative py-8 md:py-20 px-4 sm:px-6 md:px-[70px] overflow-hidden min-h-[700px] md:min-h-[500px]"
+      style={{ backgroundColor: '#1A1A1A' }}
+    >
       {/* Background with gradient and rounded corners */}
       <div className="relative max-w-7xl mx-auto">
         {/* Main background container */}
@@ -30,7 +33,7 @@ export default function CyberFestRegistrationSection() {
                       className="font-bold leading-none text-[40px] md:text-[65px]"
                       style={{
                         fontFamily: 'SF Pro, sans-serif',
-                        fontVariationSettings: '"wdth" 100'
+                        fontVariationSettings: '"wdth" 100',
                       }}
                     >
                       Siap Jadi Bagian dari Cyber Fest 2025?
@@ -56,10 +59,12 @@ export default function CyberFestRegistrationSection() {
                   style={{
                     fontFamily: 'DM Sans, sans-serif',
                     fontVariationSettings: '"opsz" 14',
-                    fontWeight: 500
+                    fontWeight: 500,
                   }}
                 >
-                  Slot peserta terbatas! Jangan lewatkan kesempatan untuk ikut serta dalam event cybersecurity terbesar tahun ini. Daftarkan diri sekarang dan pastikan tempatmu aman.
+                  Slot peserta terbatas! Jangan lewatkan kesempatan untuk ikut serta dalam event
+                  cybersecurity terbesar tahun ini. Daftarkan diri sekarang dan pastikan tempatmu
+                  aman.
                 </motion.p>
               </div>
 
@@ -84,7 +89,7 @@ export default function CyberFestRegistrationSection() {
                     style={{
                       fontFamily: 'DM Sans, sans-serif',
                       fontVariationSettings: '"opsz" 14',
-                      fontWeight: 700
+                      fontWeight: 700,
                     }}
                   >
                     Universitas Indonesia, Depok
@@ -110,7 +115,7 @@ export default function CyberFestRegistrationSection() {
                     style={{
                       fontFamily: 'DM Sans, sans-serif',
                       fontVariationSettings: '"opsz" 14',
-                      fontWeight: 700
+                      fontWeight: 700,
                     }}
                   >
                     21 Desember 2025
@@ -133,7 +138,7 @@ export default function CyberFestRegistrationSection() {
                   style={{
                     fontFamily: 'DM Sans, sans-serif',
                     fontVariationSettings: '"opsz" 14',
-                    fontWeight: 700
+                    fontWeight: 700,
                   }}
                 >
                   Daftar Sekarang
@@ -150,7 +155,7 @@ export default function CyberFestRegistrationSection() {
                   fontFamily: 'DM Sans, sans-serif',
                   fontSize: 'clamp(0.8rem, 2.5vw, 1.2rem)',
                   fontVariationSettings: '"opsz" 14',
-                  fontWeight: 700
+                  fontWeight: 700,
                 }}
               >
                 <div className="relative w-6 h-6 md:w-8 md:h-8 flex-shrink-0">
@@ -175,7 +180,7 @@ export default function CyberFestRegistrationSection() {
               className="absolute bottom-4 left-4 right-4 md:bottom-8 md:left-8 md:right-8 h-40 md:h-72 lg:h-100 rounded-xl overflow-hidden shadow-2xl"
               style={{
                 transform: 'rotateX(15deg) rotateY(-20deg) rotateZ(5deg) skewY(-8deg)',
-                transformOrigin: 'center center'
+                transformOrigin: 'center center',
               }}
             >
               <div className="relative w-full h-full">
@@ -185,15 +190,14 @@ export default function CyberFestRegistrationSection() {
                   fill
                   className="object-cover"
                   style={{
-                    objectPosition: 'center 60%'
+                    objectPosition: 'center 60%',
                   }}
                 />
                 {/* Black gradient overlay from bottom to top */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               </div>
             </motion.div>
-
-                </div>
+          </div>
         </div>
       </div>
     </section>

@@ -5,21 +5,22 @@ import DecorativeArrows from '@/components/shared/DecorativeArrows'
 
 const targetAudiences = [
   {
-    description: "Fresh graduate yang ingin membangun portofolio dan skill baru.",
-    boldText: "Fresh graduate"
+    description: 'Fresh graduate yang ingin membangun portofolio dan skill baru.',
+    boldText: 'Fresh graduate',
   },
   {
-    description: "Professional yang ingin memperdalam kemampuan atau pivot ke dunia cybersecurity.",
-    boldText: "Professional"
+    description: 'Professional yang ingin memperdalam kemampuan atau pivot ke dunia cybersecurity.',
+    boldText: 'Professional',
   },
   {
-    description: "Mahasiswa IT maupun non-IT yang ingin mulai belajar.",
-    boldText: "Mahasiswa"
+    description: 'Mahasiswa IT maupun non-IT yang ingin mulai belajar.',
+    boldText: 'Mahasiswa',
   },
   {
-    description: "Komunitas, organisasi, atau perusahaan yang ingin berkolaborasi di bidang keamanan digital.",
-    boldText: "Komunitas, organisasi, atau perusahaan"
-  }
+    description:
+      'Komunitas, organisasi, atau perusahaan yang ingin berkolaborasi di bidang keamanan digital.',
+    boldText: 'Komunitas, organisasi, atau perusahaan',
+  },
 ]
 
 export default function WhoCanJoinSection() {
@@ -38,7 +39,7 @@ export default function WhoCanJoinSection() {
             style={{
               fontFamily: 'SF Pro, sans-serif',
               fontVariationSettings: '"wdth" 100',
-              fontWeight: 'bold'
+              fontWeight: 'bold',
             }}
           >
             Siapa yang Bisa Bergabung?
@@ -55,7 +56,8 @@ export default function WhoCanJoinSection() {
       <div
         className="absolute inset-0 pointer-events-none z-5 hidden md:block"
         style={{
-          background: 'linear-gradient(to top, rgba(211, 53, 51, 0.8) 0%, rgba(211, 53, 51, 0.5) 25%, rgba(211, 53, 51, 0.2) 35%, transparent 50%)'
+          background:
+            'linear-gradient(to top, rgba(211, 53, 51, 0.8) 0%, rgba(211, 53, 51, 0.5) 25%, rgba(211, 53, 51, 0.2) 35%, transparent 50%)',
         }}
       />
 
@@ -74,9 +76,10 @@ export default function WhoCanJoinSection() {
               padding: '34.08px 15.851px 34.08px 26px',
               borderRadius: '18.542px',
               border: '0.742px solid #FFF',
-              background: 'linear-gradient(116deg, rgba(211, 53, 51, 0.30) -9.36%, rgba(255, 255, 255, 0.30) 66.44%)',
+              background:
+                'linear-gradient(116deg, rgba(211, 53, 51, 0.30) -9.36%, rgba(255, 255, 255, 0.30) 66.44%)',
               boxShadow: '0 0 87.661px 0 rgba(0, 0, 0, 0.15)',
-              backdropFilter: 'blur(21.915346145629883px)'
+              backdropFilter: 'blur(21.915346145629883px)',
             }}
           >
             <p className="text-white text-lg font-normal leading-tight relative z-10">
@@ -100,15 +103,16 @@ export default function WhoCanJoinSection() {
               fontSize: '18px',
               fontStyle: 'normal',
               fontWeight: 400,
-              lineHeight: '125%', /* 25px */
+              lineHeight: '125%' /* 25px */,
               textTransform: 'capitalize',
               background: 'linear-gradient(179deg, #FFF 0.89%, rgba(255, 255, 255, 0.00) 153.13%)',
               backgroundClip: 'text',
               WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent'
+              WebkitTextFillColor: 'transparent',
             }}
           >
-            HackPoint terbuka untuk siapa saja yang punya ketertarikan di dunia teknologi dan keamanan siber.
+            HackPoint terbuka untuk siapa saja yang punya ketertarikan di dunia teknologi dan
+            keamanan siber.
           </p>
         </motion.div>
       </div>
@@ -121,20 +125,20 @@ export default function WhoCanJoinSection() {
             opacity: 0,
             scale: 0.3,
             y: 500,
-            rotate: 0
+            rotate: 0,
           }}
           whileInView={{
             opacity: 1,
             scale: 1,
-            y:110,
-            rotate: -5
+            y: 110,
+            rotate: -5,
           }}
           transition={{
             duration: 0.8,
             delay: 0.5,
-            type: "spring",
+            type: 'spring',
             stiffness: 100,
-            damping: 12
+            damping: 12,
           }}
           className="absolute left-[20%] -translate-x-1/2 top-[30%] z-50"
         >
@@ -147,7 +151,7 @@ export default function WhoCanJoinSection() {
                 url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise-card1'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='4' seed='5' /%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise-card1)' opacity='0.15'/%3E%3C/svg%3E")
               `,
                 backgroundSize: '100px 100px',
-                mixBlendMode: 'overlay'
+                mixBlendMode: 'overlay',
               }}
             />
             <p className="text-white text-[22px] font-normal leading-tight relative z-10">
@@ -164,20 +168,20 @@ export default function WhoCanJoinSection() {
             opacity: 0,
             scale: 0.3,
             y: 450,
-            rotate: 0
+            rotate: 0,
           }}
           whileInView={{
             opacity: 1,
             scale: 1,
             y: 90,
-            rotate: -3
+            rotate: -3,
           }}
           transition={{
             duration: 1,
             delay: 0.8,
-            type: "spring",
+            type: 'spring',
             stiffness: 80,
-            damping: 15
+            damping: 15,
           }}
           className="absolute left-[50%] -translate-x-1/2 top-[40%] z-18"
         >
@@ -190,7 +194,7 @@ export default function WhoCanJoinSection() {
                 url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise-card2'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='4' seed='6' /%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise-card2)' opacity='0.15'/%3E%3C/svg%3E")
               `,
                 backgroundSize: '100px 100px',
-                mixBlendMode: 'overlay'
+                mixBlendMode: 'overlay',
               }}
             />
             <p className="text-white text-[22px] font-normal leading-tight relative z-10">
@@ -207,20 +211,20 @@ export default function WhoCanJoinSection() {
             opacity: 0,
             scale: 0.3,
             y: 400,
-            rotate: 0
+            rotate: 0,
           }}
           whileInView={{
             opacity: 1,
             scale: 1,
             y: 140,
-            rotate: 20
+            rotate: 20,
           }}
           transition={{
             duration: 0.9,
             delay: 1.1,
-            type: "spring",
+            type: 'spring',
             stiffness: 90,
-            damping: 13
+            damping: 13,
           }}
           className="absolute left-[75%] -translate-x-1/2 top-[35%] z-8"
         >
@@ -233,7 +237,7 @@ export default function WhoCanJoinSection() {
                 url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise-card3'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='4' seed='7' /%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3Cfilter%3E%3Crect width='100' height='100' filter='url(%23noise-card3)' opacity='0.15'/%3E%3C/svg%3E")
               `,
                 backgroundSize: '100px 100px',
-                mixBlendMode: 'overlay'
+                mixBlendMode: 'overlay',
               }}
             />
             <p className="text-white text-[22px] font-normal leading-tight relative z-10">
@@ -250,21 +254,21 @@ export default function WhoCanJoinSection() {
             opacity: 0,
             scale: 0.3,
             y: 380,
-            rotate: 0
+            rotate: 0,
           }}
           whileInView={{
             opacity: 1,
             scale: 1,
             y: 120,
             x: -50,
-            rotate: -20
+            rotate: -20,
           }}
           transition={{
             duration: 0.85,
             delay: 1.4,
-            type: "spring",
+            type: 'spring',
             stiffness: 95,
-            damping: 11
+            damping: 11,
           }}
           className="absolute left-[30%] -translate-x-1/2 top-[50%] z-25"
         >
@@ -277,7 +281,7 @@ export default function WhoCanJoinSection() {
                 url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise-card4'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='4' seed='8' /%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise-card4)' opacity='0.15'/%3E%3C/svg%3E")
               `,
                 backgroundSize: '100px 100px',
-                mixBlendMode: 'overlay'
+                mixBlendMode: 'overlay',
               }}
             />
             <p className="text-white text-[22px] font-normal leading-tight relative z-10">
@@ -289,7 +293,6 @@ export default function WhoCanJoinSection() {
         </motion.div>
       </div>
 
-    
       {/* Red Circles - Pure Red, Centered, Bottom Half Coverage - Desktop Only */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:block">
         {/* Circle 1 - Back Layer (Largest) */}
@@ -298,7 +301,8 @@ export default function WhoCanJoinSection() {
             className="w-full h-full rounded-t-full relative overflow-hidden"
             style={{
               backgroundColor: '#d33533',
-              boxShadow: '0 60px 120px -30px rgba(0, 0, 0, 0.9), 0 0 150px rgba(211, 53, 51, 0.4), 0 0 200px rgba(0, 0, 0, 0.5)'
+              boxShadow:
+                '0 60px 120px -30px rgba(0, 0, 0, 0.9), 0 0 150px rgba(211, 53, 51, 0.4), 0 0 200px rgba(0, 0, 0, 0.5)',
             }}
           >
             {/* Noise Texture Layer */}
@@ -308,9 +312,9 @@ export default function WhoCanJoinSection() {
                 backgroundImage: `
                 url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise1'%3E%3CfeTurbulence baseFrequency='0.8' numOctaves='4' seed='1' /%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23noise1)' opacity='0.3'/%3E%3C/svg%3E")
               `,
-              backgroundSize: '200px 200px',
-              mixBlendMode: 'multiply'
-            }}
+                backgroundSize: '200px 200px',
+                mixBlendMode: 'multiply',
+              }}
             />
           </div>
         </div>
@@ -321,7 +325,8 @@ export default function WhoCanJoinSection() {
             className="w-full h-full rounded-t-full relative overflow-hidden"
             style={{
               backgroundColor: '#d33533',
-              boxShadow: '0 50px 100px -25px rgba(0, 0, 0, 0.85), 0 0 120px rgba(211, 53, 51, 0.35), 0 0 160px rgba(0, 0, 0, 0.4)'
+              boxShadow:
+                '0 50px 100px -25px rgba(0, 0, 0, 0.85), 0 0 120px rgba(211, 53, 51, 0.35), 0 0 160px rgba(0, 0, 0, 0.4)',
             }}
           >
             {/* Noise Texture Layer */}
@@ -331,9 +336,9 @@ export default function WhoCanJoinSection() {
                 backgroundImage: `
                 url("data:image/svg+xml,%3Csvg width='150' height='150' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise2'%3E%3CfeTurbulence baseFrequency='1.2' numOctaves='3' seed='2' /%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='150' height='150' filter='url(%23noise2)' opacity='0.4'/%3E%3C/svg%3E")
               `,
-              backgroundSize: '150px 150px',
-              mixBlendMode: 'multiply'
-            }}
+                backgroundSize: '150px 150px',
+                mixBlendMode: 'multiply',
+              }}
             />
           </div>
         </div>
@@ -344,7 +349,8 @@ export default function WhoCanJoinSection() {
             className="w-full h-full rounded-t-full relative overflow-hidden"
             style={{
               backgroundColor: '#d33533',
-              boxShadow: '0 40px 80px -20px rgba(0, 0, 0, 0.8), 0 0 100px rgba(211, 53, 51, 0.3), 0 0 120px rgba(0, 0, 0, 0.35)'
+              boxShadow:
+                '0 40px 80px -20px rgba(0, 0, 0, 0.8), 0 0 100px rgba(211, 53, 51, 0.3), 0 0 120px rgba(0, 0, 0, 0.35)',
             }}
           >
             {/* Noise Texture Layer */}
@@ -354,14 +360,13 @@ export default function WhoCanJoinSection() {
                 backgroundImage: `
                 url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise3'%3E%3CfeTurbulence baseFrequency='1.5' numOctaves='3' seed='3' /%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise3)' opacity='0.5'/%3E%3C/svg%3E")
               `,
-              backgroundSize: '100px 100px',
-              mixBlendMode: 'multiply'
-            }}
+                backgroundSize: '100px 100px',
+                mixBlendMode: 'multiply',
+              }}
             />
           </div>
         </div>
       </div>
-
-          </section>
+    </section>
   )
 }

@@ -32,7 +32,8 @@ export default function ProgramsEventSection() {
 
         <motion.div className="text-center mb-8">
           {/* Mobile: New headline text */}
-          <h2 className="block md:hidden text-[28px] font-semiboldtext-4xl font-bold text-white mb-6 leading-[100%] capitalize"
+          <h2
+            className="block md:hidden text-[28px] font-semiboldtext-4xl font-bold text-white mb-6 leading-[100%] capitalize"
             style={{
               fontFamily: 'SF Pro, sans-serif',
               fontWeight: 'bold',
@@ -43,7 +44,8 @@ export default function ProgramsEventSection() {
           </h2>
 
           {/* Desktop: Original headline text */}
-          <h2 className="hidden md:block text-4xl md:text-5xl lg:text-[75px] font-bold text-white mb-6 leading-[100%] capitalize"
+          <h2
+            className="hidden md:block text-4xl md:text-5xl lg:text-[75px] font-bold text-white mb-6 leading-[100%] capitalize"
             style={{
               fontFamily: 'SF Pro, sans-serif',
               fontWeight: 'bold',

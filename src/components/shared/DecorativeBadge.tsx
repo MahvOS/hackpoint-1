@@ -11,13 +11,13 @@ interface DecorativeBadgeProps {
 
 export default function DecorativeBadge({
   size = 'md',
-  className = "",
-  animate = true
+  className = '',
+  animate = true,
 }: DecorativeBadgeProps) {
   const sizeClasses = {
     sm: 'w-16 h-16',
     md: 'w-24 h-24',
-    lg: 'w-64 h-20'
+    lg: 'w-64 h-20',
   }
 
   return (
@@ -27,19 +27,27 @@ export default function DecorativeBadge({
         ${animate ? 'animate-float' : ''}
       `}
       initial={animate ? { opacity: 0, scale: 0 } : {}}
-      animate={animate ? {
-        opacity: 1,
-        scale: 1,
-        rotate: [0, 5, -5, 0],
-      } : {}}
-      transition={animate ? {
-        duration: 0.8,
-        rotate: {
-          duration: 4,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }
-      } : {}}
+      animate={
+        animate
+          ? {
+              opacity: 1,
+              scale: 1,
+              rotate: [0, 5, -5, 0],
+            }
+          : {}
+      }
+      transition={
+        animate
+          ? {
+              duration: 0.8,
+              rotate: {
+                duration: 4,
+                repeat: Infinity,
+                ease: 'easeInOut',
+              },
+            }
+          : {}
+      }
     >
       <div className="relative w-50 h-18">
         {/* Main badge image */}

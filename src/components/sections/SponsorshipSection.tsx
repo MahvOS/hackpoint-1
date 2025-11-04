@@ -11,12 +11,7 @@ const SponsorLogo = ({ sponsor }: { sponsor: Sponsor }) => (
       className="relative opacity-60"
       style={{ width: `${sponsor.width}px`, height: `${sponsor.height}px` }}
     >
-      <Image
-        src={sponsor.logo}
-        alt={sponsor.name}
-        fill
-        className="object-contain"
-      />
+      <Image src={sponsor.logo} alt={sponsor.name} fill className="object-contain" />
     </div>
   </div>
 )
@@ -31,14 +26,14 @@ export default function SponsorshipSection() {
             <motion.div
               className="flex gap-16 items-center"
               animate={{
-                x: [0, "-50%"]
+                x: [0, '-50%'],
               }}
               transition={{
                 x: {
                   repeat: Infinity,
-                  repeatType: "loop",
+                  repeatType: 'loop',
                   duration: 12,
-                  ease: "linear",
+                  ease: 'linear',
                 },
               }}
             >
@@ -85,14 +80,14 @@ export default function SponsorshipSection() {
           <motion.div
             className="flex gap-16 md:gap-24 lg:gap-32 items-center"
             animate={{
-              x: [0, "-50%"]
+              x: [0, '-50%'],
             }}
             transition={{
               x: {
                 repeat: Infinity,
-                repeatType: "loop",
+                repeatType: 'loop',
                 duration: 100,
-                ease: "linear",
+                ease: 'linear',
               },
             }}
           >

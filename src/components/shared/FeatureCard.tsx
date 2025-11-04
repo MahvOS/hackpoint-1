@@ -15,7 +15,7 @@ export default function FeatureCard({
   description,
   backgroundImage,
   logoImage,
-  index
+  index,
 }: FeatureCardProps) {
   const isEven = index % 2 === 1
 
@@ -40,7 +40,7 @@ export default function FeatureCard({
         style={{
           fontFamily: 'SF Pro, sans-serif',
           fontVariationSettings: '"wdth" 100',
-          fontWeight: 'bold'
+          fontWeight: 'bold',
         }}
       >
         {title}
@@ -51,7 +51,7 @@ export default function FeatureCard({
         style={{
           fontFamily: 'SF Pro, sans-serif',
           fontVariationSettings: '"wdth" 100',
-          fontWeight: 'medium'
+          fontWeight: 'medium',
         }}
       >
         {description}

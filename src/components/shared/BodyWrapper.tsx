@@ -16,9 +16,5 @@ export default function BodyWrapper({ children, className }: BodyWrapperProps) {
     }
   }, [])
 
-  return (
-    <div className={className}>
-      {children}
-    </div>
-  )
+  return <div className={className}>{children}</div>
 }

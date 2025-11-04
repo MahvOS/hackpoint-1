@@ -4,21 +4,22 @@ import { motion } from 'framer-motion'
 
 const programs = [
   {
-    title: "Bootcamp - Intensif",
-    description: "Belajar selama beberapa hari dengan materi padat, lab langsung, dan CTF."
+    title: 'Bootcamp - Intensif',
+    description: 'Belajar selama beberapa hari dengan materi padat, lab langsung, dan CTF.',
   },
   {
-    title: "Online - Course",
-    description: "Materi fleksibel yang bisa diakses kapan saja, lengkap dengan latihan praktis."
+    title: 'Online - Course',
+    description: 'Materi fleksibel yang bisa diakses kapan saja, lengkap dengan latihan praktis.',
   },
   {
-    title: "Seminar & Webinar",
-    description: "Sesi berbagi ilmu dari praktisi cybersecurity global dan lokal."
+    title: 'Seminar & Webinar',
+    description: 'Sesi berbagi ilmu dari praktisi cybersecurity global dan lokal.',
   },
   {
-    title: "Cyber-Fest",
-    description: "Event tahunan terbesar HackPoint yang menggabungkan kompetisi, talkshow, dan networking."
-  }
+    title: 'Cyber-Fest',
+    description:
+      'Event tahunan terbesar HackPoint yang menggabungkan kompetisi, talkshow, dan networking.',
+  },
 ]
 
 export default function ProgramsSection() {
@@ -36,7 +37,7 @@ export default function ProgramsSection() {
               fontSize: '56px',
               fontFamily: 'SF Pro, sans-serif',
               fontVariationSettings: '"wdth" 100',
-              fontWeight: 'bold'
+              fontWeight: 'bold',
             }}
           >
             Program Kami
@@ -79,24 +80,28 @@ export default function ProgramsSection() {
                       fontSize: '32px',
                       fontFamily: 'SF Pro, sans-serif',
                       fontVariationSettings: '"wdth" 100',
-                      fontWeight: 510
+                      fontWeight: 510,
                     }}
                   >
-                    {program.title === "Bootcamp - Intensif" ? (
+                    {program.title === 'Bootcamp - Intensif' ? (
                       <>
-                        Bootcamp -<br />Intensif
+                        Bootcamp -<br />
+                        Intensif
                       </>
-                    ) : program.title === "Online - Course" ? (
+                    ) : program.title === 'Online - Course' ? (
                       <>
-                        Online -<br />Course
+                        Online -<br />
+                        Course
                       </>
-                    ) : program.title === "Seminar & Webinar" ? (
+                    ) : program.title === 'Seminar & Webinar' ? (
                       <>
-                        Seminar &<br />Webinar
+                        Seminar &<br />
+                        Webinar
                       </>
-                    ) : program.title === "Cyber-Fest" ? (
+                    ) : program.title === 'Cyber-Fest' ? (
                       <>
-                        Cyber -<br />Fest
+                        Cyber -<br />
+                        Fest
                       </>
                     ) : (
                       program.title
@@ -112,7 +117,7 @@ export default function ProgramsSection() {
                       fontSize: '18px',
                       fontFamily: 'SF Pro, sans-serif',
                       fontVariationSettings: '"wdth" 100',
-                      fontWeight: 'normal'
+                      fontWeight: 'normal',
                     }}
                   >
                     {program.description}

@@ -19,33 +19,33 @@ const defaultAnimation = {
   initial: { opacity: 0, y: 30 },
   whileInView: { opacity: 1, y: 0 },
   transition: { duration: 0.6 },
-  viewport: { once: true }
+  viewport: { once: true },
 }
 
 const slideInLeft = {
   initial: { opacity: 0, x: -50 },
   whileInView: { opacity: 1, x: 0 },
   transition: { duration: 0.8 },
-  viewport: { once: true }
+  viewport: { once: true },
 }
 
 const slideInRight = {
   initial: { opacity: 0, x: 50 },
   whileInView: { opacity: 1, x: 0 },
   transition: { duration: 0.8 },
-  viewport: { once: true }
+  viewport: { once: true },
 }
 
 const fadeIn = {
   initial: { opacity: 0 },
   whileInView: { opacity: 1 },
   transition: { duration: 0.6 },
-  viewport: { once: true }
+  viewport: { once: true },
 }
 
 export default function AnimatedSection({
   children,
-  className = "",
+  className = '',
   animationType = 'default',
   ...customProps
 }: AnimatedSectionProps) {
@@ -53,7 +53,7 @@ export default function AnimatedSection({
     default: defaultAnimation,
     slideInLeft,
     slideInRight,
-    fadeIn
+    fadeIn,
   }[animationType]
 
   const finalProps = { ...animation, ...customProps }

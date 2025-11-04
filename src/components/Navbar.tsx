@@ -30,7 +30,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`${scrolled ? 'fixed top-0 left-0 right-0' : 'absolute top-0 left-0 right-0'} z-50 flex h-auto md:h-[110px] items-center justify-between px-4 md:px-[70px] py-4 md:py-0 transition-all duration-300 ${
+      className={`${scrolled ? 'fixed top-0 left-0 right-0' : 'absolute top-0 left-0 right-0'} z-50 flex h-auto md:h-[80px] items-center justify-between px-4 md:px-[70px] py-4 md:py-0 transition-all duration-300 ${
         scrolled
           ? 'bg-white/10 backdrop-blur-2xl shadow-xl border-b border-white/20 shadow-[0_4px_20px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.1)]'
           : 'bg-white/5 backdrop-blur-2xl shadow-md border-b border-white/10 shadow-[0_2px_10px_rgba(0,0,0,0.05),inset_0_1px_0_rgba(255,255,255,0.1)]'
