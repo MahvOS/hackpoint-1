@@ -25,17 +25,17 @@ const targetAudiences = [
 
 export default function WhoCanJoinSection() {
   return (
-    <section className="relative bg-[#1A1A1A] py-16 md:py-32 px-4 md:px-[70px] overflow-hidden min-h-[100vh] md:min-h-[150vh] w-full">
+    <section className="relative bg-[#1A1A1A] py-8 md:py-32 px-2 sm:px-4 md:px-[70px] overflow-hidden min-h-[100vh] md:min-h-[150vh] w-full">
       {/* Section Header */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative max-w-7xl mx-auto mb-8 md:mb-12"
+        className="relative max-w-7xl mx-auto mb-6 md:mb-12"
       >
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between items-center text-center md:text-left">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between items-center text-center md:text-left gap-2 md:gap-0">
           <h2
-            className="capitalize font-bold leading-[0.91] text-white text-4xl md:text-[60.885px]"
+            className="capitalize font-bold leading-[0.91] text-white text-2xl sm:text-3xl md:text-[60.885px]"
             style={{
               fontFamily: 'SF Pro, sans-serif',
               fontVariationSettings: '"wdth" 100',
@@ -62,28 +62,28 @@ export default function WhoCanJoinSection() {
       />
 
       {/* Mobile Vertical Cards List */}
-      <div className="block md:hidden relative z-40 max-w-[337px] mx-auto space-y-4 mb-8">
+      <div className="block md:hidden relative z-40 w-full max-w-[337px] mx-auto space-y-3 mb-6 px-1">
         {targetAudiences.map((audience, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
-            className="relative flex items-center gap-[7.925px]"
+            className="relative flex items-center gap-2 w-full"
             style={{
               display: 'flex',
-              width: '337px',
-              padding: '34.08px 15.851px 34.08px 26px',
-              borderRadius: '18.542px',
-              border: '0.742px solid #FFF',
+              width: '100%',
+              padding: '22px 12px 22px 16px',
+              borderRadius: '14px',
+              border: '1px solid #FFF',
               background:
                 'linear-gradient(116deg, rgba(211, 53, 51, 0.30) -9.36%, rgba(255, 255, 255, 0.30) 66.44%)',
-              boxShadow: '0 0 87.661px 0 rgba(0, 0, 0, 0.15)',
-              backdropFilter: 'blur(21.915346145629883px)',
+              boxShadow: '0 0 40px 0 rgba(0, 0, 0, 0.12)',
+              backdropFilter: 'blur(14px)',
             }}
           >
-            <p className="text-white text-lg font-normal leading-tight relative z-10">
-              <span className="font-semibold text-xl">{audience.boldText}</span>
+            <p className="text-white text-base sm:text-lg font-normal leading-tight relative z-10">
+              <span className="font-semibold text-base sm:text-lg">{audience.boldText}</span>
               {audience.description.substring(audience.boldText.length)}
             </p>
           </motion.div>
@@ -91,7 +91,7 @@ export default function WhoCanJoinSection() {
       </div>
 
       {/* Mobile Description Text Below Cards */}
-      <div className="block md:hidden relative z-40 max-w-[337px] mx-auto text-left">
+      <div className="block md:hidden relative z-40 w-full max-w-[337px] mx-auto text-left px-1">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -100,10 +100,10 @@ export default function WhoCanJoinSection() {
           <p
             style={{
               fontFamily: '"Space Grotesk", sans-serif',
-              fontSize: '18px',
+              fontSize: '15px',
               fontStyle: 'normal',
               fontWeight: 400,
-              lineHeight: '125%' /* 25px */,
+              lineHeight: '125%',
               textTransform: 'capitalize',
               background: 'linear-gradient(179deg, #FFF 0.89%, rgba(255, 255, 255, 0.00) 153.13%)',
               backgroundClip: 'text',
