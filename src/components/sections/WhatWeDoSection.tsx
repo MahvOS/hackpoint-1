@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useMemo } from 'react'
+import Image from 'next/image'
 import InfiniteHorizontalSlider from '@/components/InfiniteHorizontalSlider'
 import DecorativeArrows from '@/components/shared/DecorativeArrows'
 
@@ -78,10 +79,12 @@ export default function WhatWeDoSection() {
         <div className="block md:hidden mb-8">
           <div className="relative w-[200px] h-[60px] mx-auto flex items-center justify-center space-x-3">
             {/* Icon */}
-            <img
+            <Image
               src="/assets/hackpoint/mobile_icon_mini.png"
               alt="What we do"
-              className="w-[35px] h-[35px] object-contain"
+              width={35}
+              height={35}
+              className="object-contain"
             />
             {/* Text */}
             <h3 className="text-white font-bold text-[16px] uppercase tracking-wider">

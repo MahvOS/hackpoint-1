@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
+import Image from 'next/image'
 
 interface FAQItem {
   id: number
@@ -63,10 +64,12 @@ export default function FAQSection() {
           <div className="flex flex-col items-center gap-2 text-center block md:hidden">
             <div className="flex items-center gap-2">
               <div className="relative w-6 h-6">
-                <img
+                <Image
                   src="/assets/hackpoint/mobile_icon_mini.png"
                   alt="FAQ Icon"
-                  className="w-full h-full object-contain"
+                  width={24}
+                  height={24}
+                  className="object-contain"
                 />
               </div>
               <h2 className="font-bold leading-none text-[16px] capitalize">F.A.Q Mini</h2>

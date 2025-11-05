@@ -49,6 +49,8 @@ export default function WhatMakesUsDifferentSection() {
             <Image
               src="/assets/hackpoint/mobile_icon_mini.png"
               alt="Mini icon"
+              width={6}
+              height={6}
               className="w-6 h-6"
             />
             <span

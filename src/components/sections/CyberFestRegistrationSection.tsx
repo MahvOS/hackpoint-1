@@ -6,31 +6,31 @@ import Image from 'next/image'
 export default function CyberFestRegistrationSection() {
   return (
     <section
-      className="relative py-8 md:py-20 px-4 sm:px-6 md:px-[70px] overflow-hidden min-h-[700px] md:min-h-[500px]"
+      className="relative py-6 md:py-20 px-2 sm:px-4 md:px-[70px] overflow-hidden min-h-[700px] md:min-h-[500px]"
       style={{ backgroundColor: '#1A1A1A' }}
     >
       {/* Background with gradient and rounded corners */}
       <div className="relative max-w-7xl mx-auto">
         {/* Main background container */}
-        <div className="relative h-[600px] sm:h-[550px] md:h-[700px] lg:h-[893px] rounded-[15px] sm:rounded-[25px] md:rounded-[30px] overflow-hidden">
+  <div className="relative h-[520px] sm:h-[550px] md:h-[700px] lg:h-[893px] rounded-[12px] sm:rounded-[25px] md:rounded-[30px] overflow-hidden">
           {/* Red background with gradient */}
-          <div className="absolute inset-0 bg-gradient-to-b from-red-600 via-red-700 to-transparent rounded-[15px] sm:rounded-[25px] md:rounded-[30px]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-red-800 via-red-900 to-transparent rounded-[12px] sm:rounded-[25px] md:rounded-[30px]" />
 
           {/* Content overlay */}
-          <div className="relative z-10 flex flex-col h-full p-3 sm:p-6 md:p-8 lg:p-12">
+          <div className="relative z-10 flex flex-col h-full p-2 sm:p-4 md:p-8 lg:p-12">
             {/* Top section with heading and details side by side */}
             <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start ">
               {/* Left side - Heading and description */}
-              <div className="flex-1 space-y-3 md:space-y-8">
+              <div className="flex-1 space-y-2 md:space-y-8">
                 <motion.h2
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8 }}
                   className="text-white"
                 >
-                  <div className="flex flex-col mt-2 md:mt-4">
+                  <div className="flex flex-col mt-1 md:mt-4">
                     <span
-                      className="font-bold leading-none text-[40px] md:text-[65px]"
+                      className="font-bold leading-none text-[28px] sm:text-[36px] md:text-[65px]"
                       style={{
                         fontFamily: 'SF Pro, sans-serif',
                         fontVariationSettings: '"wdth" 100',
@@ -55,7 +55,7 @@ export default function CyberFestRegistrationSection() {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
-                  className="text-white/80 max-w-lg md:max-w-2xl text-sm md:text-base"
+                  className="text-white/80 max-w-xs sm:max-w-lg md:max-w-2xl text-xs sm:text-sm md:text-base"
                   style={{
                     fontFamily: 'DM Sans, sans-serif',
                     fontVariationSettings: '"opsz" 14',
@@ -69,12 +69,12 @@ export default function CyberFestRegistrationSection() {
               </div>
 
               {/* Right side - Event details */}
-              <div className="flex flex-col items-start mt-4 gap-2 md:gap-6 lg:gap-4 lg:ml-8 lg:self-center">
+              <div className="flex flex-col items-start mt-3 gap-2 md:gap-6 lg:gap-4 lg:ml-8 lg:self-center">
                 <motion.div
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: 0.3 }}
-                  className="flex items-center gap-3 md:gap-4"
+                  className="flex items-center gap-2 sm:gap-3 md:gap-4"
                 >
                   <div className="relative w-6 h-6 md:w-8 md:h-8">
                     <Image
@@ -100,7 +100,7 @@ export default function CyberFestRegistrationSection() {
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
-                  className="flex items-center gap-3 md:gap-4"
+                  className="flex items-center gap-2 sm:gap-3 md:gap-4"
                 >
                   <div className="relative w-6 h-6 md:w-8 md:h-8">
                     <Image
@@ -125,16 +125,16 @@ export default function CyberFestRegistrationSection() {
             </div>
 
             {/* CTA Button with participant info */}
-            <div className="flex flex-col md:flex-row justify-between items-end md:items-center gap-4 md:gap-0 mt-4 md:mt-8">
+            <div className="flex flex-col md:flex-row justify-between items-end md:items-center gap-3 md:gap-0 mt-4 md:mt-8">
               {/* Left side - Button */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
-                className="self-start md:self-auto"
+                className="self-stretch md:self-auto w-full md:w-auto"
               >
                 <button
-                  className="bg-white text-red-600 px-6 py-2 md:px-8 md:py-3 rounded-full font-bold hover:bg-gray-100 transition-colors duration-200 shadow-lg text-sm md:text-base"
+                  className="bg-white text-red-600 px-4 py-2 sm:px-6 md:px-8 md:py-3 rounded-full font-bold hover:bg-gray-100 transition-colors duration-200 shadow-lg text-xs sm:text-sm md:text-base w-full md:w-auto"
                   style={{
                     fontFamily: 'DM Sans, sans-serif',
                     fontVariationSettings: '"opsz" 14',
@@ -150,7 +150,7 @@ export default function CyberFestRegistrationSection() {
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
-                className="flex items-center gap-2 md:gap-3 text-white font-bold text-left"
+                className="flex items-center gap-1 sm:gap-2 md:gap-3 text-white font-bold text-left"
                 style={{
                   fontFamily: 'DM Sans, sans-serif',
                   fontSize: 'clamp(0.8rem, 2.5vw, 1.2rem)',
@@ -166,7 +166,7 @@ export default function CyberFestRegistrationSection() {
                     className="object-contain"
                   />
                 </div>
-                <span className="text-xs md:text-sm lg:text-base">
+                <span className="text-[10px] sm:text-xs md:text-sm lg:text-base">
                   3000+ peserta dari kampus, komunitas, dan industri teknologi
                 </span>
               </motion.div>
@@ -177,7 +177,7 @@ export default function CyberFestRegistrationSection() {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
-              className="absolute bottom-4 left-4 right-4 md:bottom-8 md:left-8 md:right-8 h-40 md:h-72 lg:h-100 rounded-xl overflow-hidden shadow-2xl"
+              className="absolute bottom-2 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4 md:bottom-8 md:left-8 md:right-8 h-28 sm:h-40 md:h-72 lg:h-100 rounded-lg sm:rounded-xl overflow-hidden shadow-2xl"
               style={{
                 transform: 'rotateX(15deg) rotateY(-20deg) rotateZ(5deg) skewY(-8deg)',
                 transformOrigin: 'center center',

@@ -26,8 +26,8 @@ export default function Navbar() {
     <nav
       className={`${scrolled ? 'fixed top-0 left-0 right-0' : 'absolute top-0 left-0 right-0'} z-50 flex h-auto md:h-[80px] items-center justify-between px-4 md:px-[70px] py-4 md:py-0 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/10 backdrop-blur-2xl shadow-xl border-b border-white/20 shadow-[0_4px_20px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.1)]'
-          : 'bg-white/5 backdrop-blur-2xl shadow-md border-b border-white/10 shadow-[0_2px_10px_rgba(0,0,0,0.05),inset_0_1px_0_rgba(255,255,255,0.1)]'
+          ? 'bg-white/10 backdrop-blur-2xl border-b border-white/20 shadow-[0_4px_20px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.1)]'
+          : 'bg-white/5 backdrop-blur-2xl border-b border-white/10 shadow-[0_2px_10px_rgba(0,0,0,0.05),inset_0_1px_0_rgba(255,255,255,0.1)]'
       }`}
     >
       <div className="flex items-center gap-4 md:gap-8">
@@ -96,7 +96,9 @@ export default function Navbar() {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3, ease: 'easeInOut' }}
-              className="md:hidden flex flex-col items-center gap-4 overflow-hidden"
+              // Make mobile menu an absolute overlay under the nav so it doesn't push
+              // or rearrange page content (prevents messy layout on small screens).
+              className="md:hidden absolute top-full left-0 right-0 z-40 flex flex-col items-center gap-4 overflow-hidden bg-black/80 backdrop-blur-md py-4"
             >
               <motion.a
                 href="/"

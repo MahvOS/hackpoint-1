@@ -23,7 +23,7 @@ export default function AboutHeroSection() {
       <img
         src="/assets/hackpoint/about_red_light_mobile.png"
         alt="Light effect"
-        className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/4 scale-[110%] object-contain opacity-100 z-20 block md:hidden"
+        className="absolute top-0 left-1/2 transform -translate-x-1/2 scale-[110%] object-contain opacity-100 z-20 block md:hidden"
       />
 
       {/* Mobile Decorative Arrow below red light */}
@@ -74,7 +74,7 @@ export default function AboutHeroSection() {
 
           {/* Description with Gradient Text Background */}
           <div
-            className="font-medium text-[16px] md:text-[21px] leading-none tracking-[0.93px] w-full capitalize px-4 md:px-20 lg:px-32 gradient-text-fallback"
+            className="font-medium text-[16px] md:text-[16px] leading-none tracking-[0.93px] w-full capitalize px-4 md:px-20 lg:px-32 gradient-text-fallback"
             style={{
               fontFamily: 'SF Pro, sans-serif',
               fontVariationSettings: '"wdth" 100',
@@ -111,12 +111,12 @@ export default function AboutHeroSection() {
           </div>
 
           {/* Decorative Arrow above Vision & Misi button for mobile ONLY - in front of red light */}
-          <div className="block md:!hidden w-28 h-28 mx-auto mb-3 relative z-40">
+          <div className="block md:!hidden w-28 h-28 mx-auto mb-1 relative z-40">
             <DecorativeArrows showLeft={false} showRight={true} position="bottom" />
           </div>
 
           <motion.button
-            className="flex h-[40px] md:h-[47px] w-auto px-6 md:w-[230px] items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#D33533] to-[#6D1B1A] py-3 transition-all hover:scale-105 hover:shadow-[0_4px_13.4px_rgba(0,0,0,0.25),0_0_63.889px_rgba(255,255,255,0.3)]"
+            className="flex h-[44px] md:h-[47px] w-[85vw] max-w-xs md:w-[230px] items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#D33533] to-[#6D1B1A] py-3 transition-all hover:scale-105 hover:shadow-[0_4px_13.4px_rgba(0,0,0,0.25),0_0_63.889px_rgba(255,255,255,0.3)]"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
