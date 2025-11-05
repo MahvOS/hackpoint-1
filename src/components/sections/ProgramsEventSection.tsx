@@ -75,7 +75,7 @@ export default function ProgramsEventSection() {
             {/* Image */}
             <img
               src={DESIGN_TOKENS.assets.hackpoint.programEvents.nationalCTF}
-              alt="National CFT Competition"
+              alt="National CTF Competition"
               className="absolute h-[197px] ml-[11px] mt-[10px] rounded-[17px] w-[325px] object-cover"
               style={{ objectPosition: 'left center' }}
             />
