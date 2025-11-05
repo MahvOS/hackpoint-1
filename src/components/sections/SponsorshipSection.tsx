@@ -8,7 +8,9 @@ import { SPONSORS, type Sponsor } from '@/data/sponsors'
 const SponsorLogo = ({ sponsor }: { sponsor: Sponsor }) => (
   <div className="relative flex items-center justify-center">
     <div
-      className="relative opacity-60"
+      // Use transform scaling on mobile so we can keep explicit width/height
+      // (needed for next/image fill) while visually reducing size on small screens.
+      className="relative opacity-60 transform scale-75 md:scale-100"
       style={{ width: `${sponsor.width}px`, height: `${sponsor.height}px` }}
     >
       <Image src={sponsor.logo} alt={sponsor.name} fill className="object-contain" />
@@ -22,9 +24,9 @@ export default function SponsorshipSection() {
       <div className="flex flex-col items-center gap-8 md:gap-12">
         {/* Mobile: Only show sponsors */}
         <div className="block md:hidden w-full">
-          <div className="relative w-full overflow-hidden py-8">
+          <div className="relative w-full overflow-hidden py-6 md:py-8">
             <motion.div
-              className="flex gap-16 items-center"
+              className="flex gap-8 md:gap-16 items-center"
               animate={{
                 x: [0, '-50%'],
               }}
