@@ -12,7 +12,7 @@ export default function CyberFestRegistrationSection() {
       {/* Background with gradient and rounded corners */}
       <div className="relative max-w-7xl mx-auto">
         {/* Main background container */}
-       <div className="relative h-[520px] sm:h-[550px] md:h-[700px] lg:h-[893px] rounded-[12px] sm:rounded-[25px] md:rounded-[30px] overflow-hidden">
+        <div className="relative h-[520px] sm:h-[550px] md:h-[700px] lg:h-[893px] rounded-[12px] sm:rounded-[25px] md:rounded-[30px] overflow-hidden">
           {/* Red background with gradient */}
           <div className="absolute inset-0 bg-gradient-to-b from-red-800 via-red-900 to-transparent rounded-[12px] sm:rounded-[25px] md:rounded-[30px]" />
 
