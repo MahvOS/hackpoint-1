@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
-import { cn } from '@/lib/utils'
 
 export default function SpeakersSection() {
   const scrollContainerRef = useRef<HTMLDivElement>(null)

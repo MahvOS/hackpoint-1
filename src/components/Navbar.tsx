@@ -1,17 +1,11 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { ChevronDown, Menu, X } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { DESIGN_TOKENS } from '@/constants/design'
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from '@/components/ui/navigation-menu'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -37,57 +31,61 @@ export default function Navbar() {
       }`}
     >
       <div className="flex items-center gap-4 md:gap-8">
-        <a href="/" className="flex items-center mr-16 group">
+        <Link href="/" className="flex items-center mr-16 group">
           <div className="p-2 rounded-lg transition-all duration-300 group-hover:bg-transparent group-hover:backdrop-blur-none group-hover:shadow-none">
-            <img
+            <Image
               src={DESIGN_TOKENS.assets.hackpoint.logo}
               alt="HackPoint Logo"
               className="h-10 w-32 md:w-auto transition-transform duration-300 group-hover:scale-105"
+              width={128} // Specify appropriate width
+              height={40} // Specify appropriate height
             />
           </div>
-        </a>
+        </Link>
 
         {/* Desktop menu - always visible */}
         <div className="hidden md:flex md:flex-row md:items-center md:gap-6">
-          <a
+          <Link
             href="/"
             className="font-sf text-[17px] font-medium text-white capitalize hover:text-white/80 transition-colors no-underline"
           >
             Home
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/about"
             className="font-sf text-[17px] font-medium text-white capitalize hover:text-white/80 transition-colors no-underline"
           >
             About
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="#ctf"
             className="font-sf text-[17px] text-white capitalize hover:text-white/80 transition-colors"
           >
             CTF
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="#course"
             className="font-sf text-[17px] text-white capitalize hover:text-white/80 transition-colors"
           >
             Course
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/cyberfest-2025"
             className="flex items-center gap-1.5 font-sf text-base text-white capitalize hover:text-white/80 transition-colors"
           >
             CyberFest 2025
-            <img
+            <Image
               src={DESIGN_TOKENS.assets.hackpoint.cyberfestLogo}
               alt="navbar_cyberfest"
               className="w-[14px] h-[15px]"
+              width={14} // Specify appropriate width
+              height={15} // Specify appropriate height
             />
-          </a>
+          </Link>
         </div>
 
         {/* Mobile menu - animated */}
@@ -153,10 +151,12 @@ export default function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 CyberFest 2025
-                <img
+                <Image
                   src={DESIGN_TOKENS.assets.hackpoint.cyberfestLogo}
                   alt="navbar_cyberfest"
                   className="w-[14px] h-[15px]"
+                  width={14} // Specify appropriate width
+                  height={15} // Specify appropriate height
                 />
               </motion.a>
             </motion.div>

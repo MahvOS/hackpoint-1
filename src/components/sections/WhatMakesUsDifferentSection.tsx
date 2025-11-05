@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image';
+import Image from 'next/image'
 import FeatureCard from '@/components/shared/FeatureCard'
 import DecorativeArrows from '@/components/shared/DecorativeArrows'
 
@@ -46,7 +46,11 @@ export default function WhatMakesUsDifferentSection() {
         >
           {/* Mini Icon and Text - MOBILE ONLY */}
           <div className="flex items-center gap-2 mb-4 md:hidden">
-            <Image src="/assets/hackpoint/mobile_icon_mini.png" alt="Mini icon" className="w-6 h-6" />
+            <Image
+              src="/assets/hackpoint/mobile_icon_mini.png"
+              alt="Mini icon"
+              className="w-6 h-6"
+            />
             <span
               className="text-white font-semibold uppercase tracking-wider text-xs"
               style={{

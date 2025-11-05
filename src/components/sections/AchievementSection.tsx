@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import DecorativeArrows from '@/components/shared/DecorativeArrows'
 
 const achievementData = [
   {
@@ -41,14 +40,6 @@ const titleStyles = {
   fontWeight: 590,
   fontSize: '42px',
   letterSpacing: '-1.28px',
-}
-
-const titleStylesDesktop = {
-  fontFamily: 'SF Pro, sans-serif',
-  fontVariationSettings: '"wdth" 100',
-  fontWeight: 590,
-  fontSize: '54px',
-  letterSpacing: '-2.16px',
 }
 
 const cardTitleStyles = {

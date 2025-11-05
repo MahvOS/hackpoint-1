@@ -114,9 +114,9 @@ export default function CyberFestHeroSection() {
               CyberFest 2025
             </span>
             <span className="font-bold text-[32px] sm:text-[22px] text-white/30 block font-sf leading-tight leading-7">
-              Indonesia's Biggest Cybersecurity
+              Indonesia&apos;s Biggest Cybersecurity
               <br className="hidden sm:block" />
-              Youth & Tech Movement
+              Youth &amp; Tech Movement
             </span>
           </motion.h1>
 
@@ -161,7 +161,7 @@ export default function CyberFestHeroSection() {
                   fontSize: '50px',
                 }}
               >
-                Indonesia's Biggest Cybersecurity Youth & Tech Movement
+                Indonesia&apos;s Biggest Cybersecurity Youth &amp; Tech Movement
               </span>
             </span>
           </motion.h1>
@@ -173,7 +173,8 @@ export default function CyberFestHeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             Event terbesar HackPoint yang mempertemukan pelajar, profesional, dan industri untuk
-            belajar, berkompetisi, dan membangun masa depan dunia cyber security.
+            belajar, berkompetisi, dan membangun masa depan dunia cyber security. It&apos;s going to
+            be amazing!
           </motion.p>
         </div>
 

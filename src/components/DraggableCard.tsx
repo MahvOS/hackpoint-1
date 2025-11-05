@@ -14,7 +14,6 @@ export default function DraggableCard({ children, className = '', onDragEnd }: D
 
   const handleDragEnd = (event: any, info: any) => {
     // Handle drag gesture with offset and velocity for swipe gestures
-    const { offset, velocity } = info
 
     // Call custom onDragEnd if provided
     if (onDragEnd) {

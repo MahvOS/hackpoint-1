@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import DecorativeArrows from '@/components/shared/DecorativeArrows'
 import { DESIGN_TOKENS } from '@/constants/design'
 

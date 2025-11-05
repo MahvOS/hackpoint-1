@@ -1,4 +1,5 @@
 {/_ HACKPOINT! - Red base rectangle _/}
+
 <div
               className="absolute left-8 bg-[#D33533] px-0.5 py-0.5 transform rotate-[350.05deg] shadow-lg relative z-20"
             >

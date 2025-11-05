@@ -37,8 +37,6 @@ export default function InfiniteHorizontalSlider({
   itemHeight = 366,
   gap = 30,
   borderRadius = '50px',
-  backdropBlur = '42.118px',
-  border = '1.994px solid white',
   containerHeight = '400px',
 }: InfiniteHorizontalSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0)

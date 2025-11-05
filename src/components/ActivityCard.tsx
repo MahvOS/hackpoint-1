@@ -15,7 +15,7 @@ interface ActivityCardProps {
   onClick?: () => void
 }
 
-export default function ActivityCard({ activity, isActive = false, onClick }: ActivityCardProps) {
+export default function ActivityCard({ activity, onClick }: ActivityCardProps) {
   return (
     <motion.div
       whileHover={{ scale: 1.02 }}

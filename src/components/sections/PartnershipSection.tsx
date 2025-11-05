@@ -58,19 +58,6 @@ const paragraphStyles = {
   letterSpacing: '-1px',
 }
 
-const paragraphStylesDesktop = {
-  fontFamily: 'SF Pro, sans-serif',
-  fontVariationSettings: '"wdth" 100',
-  fontWeight: 510,
-  fontSize: 43,
-  letterSpacing: '-1.91px',
-}
-
-const backgroundGradient = {
-  background:
-    'linear-gradient(to bottom, rgba(211, 53, 51, 0.05) 0%, rgba(211, 53, 51, 0.1) 30%, rgba(211, 53, 51, 0.15) 60%, rgba(211, 53, 51, 0.2) 100%)',
-}
-
 const bottomGradient = {
   background: 'linear-gradient(to top, rgba(26, 26, 26, 1) 0%, transparent 100%)',
 }

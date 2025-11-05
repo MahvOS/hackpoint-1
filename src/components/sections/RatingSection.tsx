@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion'
 
-
 export default function RatingSection() {
   return (
     <section className="block md:hidden relative py-12 px-4" style={{ backgroundColor: '#1A1A1A' }}>

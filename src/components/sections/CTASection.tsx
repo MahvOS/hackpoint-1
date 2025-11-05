@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { DESIGN_TOKENS } from '@/constants/design'
 
 const stats = [
   {
