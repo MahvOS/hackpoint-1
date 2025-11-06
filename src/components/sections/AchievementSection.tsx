@@ -90,11 +90,11 @@ export default function AchievementSection() {
           <span style={{ opacity: 0.3 }}>sudah</span>
         </h2>
 
-        {/* Shape Image - Left Corner */}
+        {/* Shape Image - Left Corner (desktop only) */}
         <img
           src="/assets/hackpoint/about_page_shape.png"
           alt="Decorative shape"
-          className="absolute left-12 top-3/2 -translate-y-1/5 -translate-x-2/2 w-auto h-116 object-contain z-10"
+          className="hidden md:block absolute left-12 top-3/2 -translate-y-1/5 -translate-x-2/2 w-auto h-116 object-contain z-10"
         />
       </motion.div>
 
