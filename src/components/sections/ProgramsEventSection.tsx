@@ -257,7 +257,7 @@ export default function ProgramsEventSection() {
             />
             <img
               src={DESIGN_TOKENS.assets.hackpoint.programEvents.nationalCTF}
-              alt="National CFT Competition"
+              alt="National CTF Competition"
               className="absolute inset-4 w-[calc(100%-32px)] h-[calc(100%-32px)] object-cover rounded-[12px] z-10"
             />
             <p
@@ -275,7 +275,7 @@ export default function ProgramsEventSection() {
                 width: '80%',
               }}
             >
-              National CFT Competition
+              National CTF Competition
             </p>
           </motion.div>
 

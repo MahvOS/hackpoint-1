@@ -76,7 +76,7 @@ const cardDescriptionStylesDesktop = {
 
 export default function AchievementSection() {
   return (
-    <section className="relative bg-[#1A1A1A] py-8 md:py-12 px-4 md:px-[70px] overflow-hidden min-h-[80vh] md:min-h-[10vh] w-full">
+    <section className="relative bg-[#1A1A1A] py-6 md:py-12 px-2 sm:px-4 md:px-[70px] overflow-hidden min-h-[80vh] md:min-h-[10vh] w-full">
       {/* Section Header */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -99,7 +99,7 @@ export default function AchievementSection() {
       </motion.div>
 
       {/* Mobile Achievement Cards - Vertical Layout */}
-      <div className="block md:hidden relative max-w-md mx-auto space-y-6 mt-8 mb-12 z-20">
+      <div className="block md:hidden relative w-full max-w-md mx-auto space-y-6 mt-6 mb-10 z-20 px-2">
         {achievementData.map((achievement, index) => (
           <motion.div
             key={index}
@@ -121,8 +121,8 @@ export default function AchievementSection() {
             {/* Regular Achievement Cards */}
             {/* Image Card */}
             <div
-              className="relative overflow-hidden rounded-[25px] shrink-0"
-              style={{ width: '274.822px', height: '308.242px', aspectRatio: '274.82/408.24' }}
+              className="relative overflow-hidden rounded-[20px] shrink-0 w-full"
+              style={{ width: '100%', paddingBottom: '112%' }}
             >
               <div className="absolute inset-0 w-full h-full">
                 <img
@@ -142,10 +142,10 @@ export default function AchievementSection() {
 
             {/* Text Content */}
             <div className="flex flex-col gap-2 items-start leading-none w-full relative shrink-0">
-              <h3 className="text-white w-full" style={cardTitleStyles}>
+              <h3 className="text-white w-full text-base sm:text-lg" style={cardTitleStyles}>
                 {achievement.title}
               </h3>
-              <p className="text-white/50 w-[90%]" style={cardDescriptionStyles}>
+              <p className="text-white/50 w-full text-sm" style={cardDescriptionStyles}>
                 {achievement.description}
               </p>
             </div>
@@ -253,7 +253,7 @@ export default function AchievementSection() {
         }}
       />
       {/* Cyber Fest Card - Separate Section Above */}
-      <div className="block md:hidden relative max-w-md mx-auto mb-12 mt-8 px-4">
+      <div className="block md:hidden relative w-full max-w-md mx-auto mb-10 mt-6 px-4">
         <motion.div
           initial={{ opacity: 0, y: 50, scale: 0.9 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -272,8 +272,8 @@ export default function AchievementSection() {
         >
           {/* Mobile Image Card - Same size as other cards */}
           <div
-            className="relative overflow-hidden rounded-[25px] shrink-0"
-            style={{ width: '274.822px', height: '308.242px', aspectRatio: '274.82/408.24' }}
+            className="relative overflow-hidden rounded-[20px] shrink-0 w-full"
+            style={{ width: '100%', paddingBottom: '112%' }}
           >
             <div className="absolute inset-0 w-full h-full">
               <img
@@ -293,10 +293,10 @@ export default function AchievementSection() {
 
           {/* Text Content */}
           <div className="flex flex-col gap-2 items-start leading-none w-full relative shrink-0">
-            <h3 className="text-white w-full" style={cardTitleStyles}>
+            <h3 className="text-white w-full text-base sm:text-lg" style={cardTitleStyles}>
               {cyberFestData.title}
             </h3>
-            <p className="text-white/50 w-[80%]" style={cardDescriptionStyles}>
+            <p className="text-white/50 w-full text-sm" style={cardDescriptionStyles}>
               {cyberFestData.description}
             </p>
           </div>
