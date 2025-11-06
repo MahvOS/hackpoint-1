@@ -97,7 +97,7 @@ export default function ProgramsEventSection() {
                 width: '267px',
               }}
             >
-              National CFT Competition
+              National CTF Competition
             </p>
           </motion.div>
 
